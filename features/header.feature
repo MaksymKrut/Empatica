@@ -7,10 +7,14 @@ Feature: Test Empatica Home page links consistency and functionality
   @final @javascript @insulated
   Scenario: User can operate with header Store menu and sub-menus
     Given I am on the home page
-    When I navigate to Order Embrace watch page
+    When I click on Store link element
+    And I click on Order Embrace watch link element
+    And I wait for 5 seconds
     Given I am on the home page
-    When I navigate to Order E4 wristband page
-#
+    When I click on Store link element
+    And I click on Order E4 wristband link element
+    And I wait for 5 seconds
+
 #  @final @javascript @insulated
 #  Scenario: User can operate with header Embrace Watch menu and sub-menus
 #    Given I am on the home page

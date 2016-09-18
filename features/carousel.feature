@@ -4,7 +4,7 @@ Feature: Test Empatica Home page links consistency and functionality
   As test automation engineer
   I need to create script checking availability of links
 
-  @final @javascript @insulated
+  @javascript @insulated
   Scenario: User can operate with home pahe carousel
     Given I am on the home page
     When I click "first carousel page" element
