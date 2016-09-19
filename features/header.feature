@@ -9,11 +9,11 @@ Feature: Test Empatica Home page links consistency and functionality
     Given I am on the home page
     When I click on Store link element
     And I click on Order Embrace watch link element
-    And I wait for 5 seconds
+    Then I should see A gorgeous watch designed to save lives text
     Given I am on the home page
     When I click on Store link element
     And I click on Order E4 wristband link element
-    And I wait for 5 seconds
+    Then I should see The most comfortable and accurate wristband text
 
 #  @final @javascript @insulated
 #  Scenario: User can operate with header Embrace Watch menu and sub-menus

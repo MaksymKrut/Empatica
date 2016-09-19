@@ -6,11 +6,13 @@
 import configparser
 
 from behave import *
+import time
 
 
 @when("I wait for {number} seconds")
-def step_impl(context, number):
-    context.browser.implicitly_wait(number)
+def step_impl(number):
+    assert isinstance(number, int)
+    time.sleep(number)
 
 
 def get_value_from_ini_file(file_name, section_header, key):
